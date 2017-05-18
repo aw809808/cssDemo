@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<style type="text/css">
+* {
+margin : 0;
+padding : 0;
+}
+#header, #footer {
+width : 960px;
+height : 30px;
+background-color : #E8E8E8;
+}
+#container {
+position : relative;
+width : 960px;
+overflow : hidden;
+}
+.mainBox {
+float : left;
+width : 680px;
+color :#FFFFFF;
+border-right : 280px solid #AAAAAA; /*将边框的宽度值设置与侧边栏的宽度相同，并用边框色“取代”侧边栏的背景色*/
+background-color : #333333;
+}
+.sideBox {
+position : absolute;
+top : 0;
+right : 0;
+width : 260px;
+color : #FFFFFF;
+}
+.mainBox, .sideBox {
+padding : 0 5px;
+color : #FF0000;
+margin-bottom : -9999px;
+padding-bottom : 9999px;
+}
+#container:after {
+display : block;
+visibility : hidden;
+font-size : 0;
+line-height : 0;
+clear : both;
+content : "";
+}
+</style>
+</head>
+
+<body style="margin:10px">
+<div id="header">头部信息.</div>
+<div id="container">
+    <div class="mainBox">
+    	<p>主要内容区域 </p>
+    	<p>增加文字看看效果 </p>
+    	<p>两列等高的页面布局方式</p>
+    	<p>可以算是一种“障眼法”</p>
+    	<p>让浏览者在视觉上感觉到页面中的两列是相同高度即可</p><p>11</p>
+    </div>
+    <div class="sideBox">侧边栏.<p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p><p>1</p></div>
+</div>
+<div id="footer">底部信息.</div>
+</body>
+
+</html>
